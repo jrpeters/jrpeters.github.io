@@ -142,6 +142,13 @@ th, td {
   text-align:left;
   padding:5px 10px;
   border-bottom:1px solid #e5e5e5;
+  border-top:1px solid #e5e5e5;
+}
+.img{
+  text-align:middle;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+  border-top:1px solid #e5e5e5;
 }
 
 dt {
@@ -163,6 +170,14 @@ header {
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
+menu {
+  width:270px;
+  float:left;
+  position:fixed;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+
 
 header ul {
   list-style:none;
@@ -245,10 +260,9 @@ footer {
   float:left;
   text-align:center;
   position:fixed;
-  bottom:50px;
+  top:750px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
-
 
 
 
