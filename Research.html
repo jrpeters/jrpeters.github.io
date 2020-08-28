@@ -17,17 +17,13 @@
       <header>
 	<p align = "center"><img src = "Jeffrey_Peters.JPG" width = "200px"></img></p>
         <h1 align = "center">Jeffrey R. Peters</h1>
-	<h4 align = "center" style="margin:0 0 5px;">Graduate Student Researcher</h4>
-	<h4 align = "center" style="margin:0 0 5px;">University of California, Santa Barbara</h4>
-	<br>
+	<h4 align = "center" style="margin:0 0 5px;"><a href ="https://www.linkedin.com/in/jeffrey-peters-5ba18b2b"> LinkedIn Profile</a></h4>
+	  
+	  	<br>
 <br>
 <hr>
 	<br>
 	<h2 align = "center"style="margin:0 0 5px;"><strong><a href ="index.html"> Home</strong></h2>
-	<h2 align = "center"style="margin:0 0 5px;"><strong><a href ="Bio.html"> Biography</strong></h2>
-	<h2 align = "center"style="margin:0 0 5px;"><strong><a href ="Research.html"> Projects</strong></h2>
-	<h2 align = "center"style="margin:0 0 5px;"><strong><a href ="Publications.html"> Publications</strong></h2>
-	<h2 align = "center"style="margin:0 0 5px;"><strong><a href ="Software.html"> Software</strong></h2>
 	<br>
 <br>
 	<hr>
@@ -35,7 +31,7 @@
       </header>
       <section>
         <h3>
-<a id="Current" class="anchor" href="#Current" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recent Research Projects</h3>
+<a id="Current" class="anchor" href="#Current" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Past Research Projects</h3>
         <h4>
 <a id="HSC" class="anchor" href="#HSC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Human Supervisory Control of Autonomous Agents</h4>
 <p> With the ever-increasing maturity of sensors and autonomous technology, the use of teams of unmanned or autonomous agents to complete complex tasks is becoming more and more common. Applications such as military reconnaissance, environmental monitoring, and warehouse logistics are either already utilizing or beginning to utilize autonomous agents  to enhance performance and efficiency. Even though autonomous teams may operate largely on their own, in many (or even most) realistic scenarios, there is a human operator that plays a crucial role in the proper operation of the system. For example, in futuristic military scenarios, a human operator (or team of operators) is responsible for analyzing sensor data collected by unmanned vehicles such as UAVs. In cases where the human takes a supervisory role, the control systems community usually refers to the overall system as a <i> human supervisory control system</i>. </p>
@@ -44,7 +40,7 @@
 <p> The introduction of humans into the system operation creates a host of issues that are not present in systems which do not contain (or do not explicitly consider) humans. For example, humans have limited analysis capability and can easily become overwhelmed if data is not presented carefully. Further, there are a number of performance factors such as memory retention and situational awareness that affect a particular operator's performance. Despite the high level of maturity of modern autonomous systems, it is not well understood what is the best way to couple the automated system components with the human components in order to best utilize the human abilities and boost performance of the overall system.</p>
 <p align = "center"><img src = "Architecture.jpg" width = "400px"></img></p>
 <p>
-Most of my current research deals with the various design aspects involved with human supervisory systems. In particular, I focus primarily on militarily-motivated systems involving teams of UAVs.
+This research deals with the various design aspects involved with human supervisory systems. In particular, it focuses primarily on militarily-motivated systems involving teams of UAVs.
 Broadly, there are three components to a general human supervisory control system: the automated agents, the human operator(s), and the interface between them (labeled "data processing station" above. Through collaborative efforts with experts in Psychology, Human Factors, Military Operations, and Control Systems, we seek to analyze each of these components, develop appropriate mathematical models, and develop autonomous systems to facilitate seamless integration. As such, most of my work focuses on specific aspects of this process, but is focused on designs that are beneficial from a systems engineering standpoint.
 </p>
 <h4>
@@ -53,7 +49,7 @@ Broadly, there are three components to a general human supervisory control syste
 A large part of developing effective systems involving mobile sensor teams is coming up with strategies for sensor coordination, namely task allocation and routing. If the mobile sensors operate as a part of a complex system involving human operators, it is not only necessary for the automation to accomplish a given task, but also do so in a way that is fast, flexible, and practical. A scheme having the aforementioned qualities is then capable of functioning in a way that benefits the complex system as a whole. This is the focus of my research in autonomy: developing autonomous algorithms that are capable of operating as a component in a complex system.
 </p> 
 
-<p> More specifically, my work has mostly focused on the development for persistent surveillance or persistent monitoring tasks, with an emphasis on UAV applications. For situations that have a few particular points of interest, we have worked to develop and implement an automated route planner that assigns tasks to the available agents and subsequently constructs UAV routes to image the targets within the user-provided specifications. Here, the user provides viewing directions and dwell-times. Extensions will look to implement this scheme in a dynamic fashion under parameter uncertainty.</p>
+<p> More specifically, my work focuses mostly on the development for persistent surveillance or persistent monitoring tasks, with an emphasis on UAV applications. For situations that have a few particular points of interest, we have worked to develop and implement an automated route planner that assigns tasks to the available agents and subsequently constructs UAV routes to image the targets within the user-provided specifications. Here, the user provides viewing directions and dwell-times. Extensions will look to implement this scheme in a dynamic fashion under parameter uncertainty.</p>
 <p align = "center"><iframe width="420" height="315" src="https://www.youtube.com/embed/ETtZ-jWi0qs" frameborder="0" allowfullscreen></iframe></p>
 
 For situations in which there is a 2D area that needs to be covered, we have developed a coordination scheme that operates in realistic environments in which agents only have sporadic and unreliable communication with a central base station (a situation that commonly occurs in human supervisory applications). Here, we use space-decomposition in order to optimally partition the environment, and then use a spectral multi-scale trajectory planner to govern agent motion within the assigned regions. Extensions will look to extend this method to an "anytime" implementation, and govern agent routes to avoid collisions.</p>
@@ -69,12 +65,8 @@ In macro-scale applications, such as an operator controlling UAVs, one way of ge
 <p align="center"><img src = "Screenshot.jpg", width = "250px"></img><img src = "ScanPath.jpg", width = "250px"></img></p>
 <p> 
 Once an effective human model is formulated, automated options for improving human performance can be explored and implemented. For example, suppose we have an application where the operator must look at a series of images to determine if a target is present.
-If we have a model for how long it takes the operator to collect enough sensory information from a particular image to make an informed decision, then we may be able to develop an automated system to alert the operator when they have spent too much or too little time on a given image. These types of automated systems that are designed for the purpose of helping the operator make a decision are called <i> decision support systems</i>, and are another one of my research interests. In particular, I have focused on methods for developing decision supports that are robust to uncertainty that is inherent to human behavior. One such approach that we have studied (in collaboration with UTRC) uses a task-based MILP that is augmented with a resting task to specify the optimal task processing order for the human while mediating task-load. We have explored extension of this scheme for multiple operators as well.</p>
+If we have a model for how long it takes the operator to collect enough sensory information from a particular image to make an informed decision, then we may be able to develop an automated system to alert the operator when they have spent too much or too little time on a given image. These types of automated systems that are designed for the purpose of helping the operator make a decision are called <i> decision support systems</i>. In particular, we focused on methods for developing decision supports that are robust to uncertainty that is inherent to human behavior. One such approach that we have studied (in collaboration with UTRC) uses a task-based MILP that is augmented with a resting task to specify the optimal task processing order for the human while mediating task-load. We have explored extension of this scheme for multiple operators as well.</p>
 <p align="center"><img src = "Diagram.jpg", width = "240px"></img><img src = "Diagram2.jpg", width = "250px"></img></p>
-
-
-<h3>
-<a id="Older" class="anchor" href="#Older" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Older Projects</h3>
 <h4>
 <a id="Camera" class="anchor" href="#Camera" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Coordination and Estimation in Active Camera Networks</h4> 
 <p>
@@ -89,11 +81,6 @@ Active (PTZ) cameras or visual sensors are becoming more affordable, and thus ar
 <a id="Other" class="anchor" href="#Other" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Fun Stuff</h3>
 <p> The video below shows some high school students that I had the pleasure of teaching as a part of the <a href ="https://csep.cnsi.ucsb.edu/k12/sst">School for Scientific Thought</a> demonstrating the maze navigation algorithms that they came up with. They did a lot of work in only a few short class periods!</p>
 <p align = "center"><iframe width="420" height="315" src="https://www.youtube.com/embed/80Vs-zohfl8" frameborder="0" allowfullscreen></iframe></p>
-
- 
-
-
-
       </section>
       <footer>
 	<p style="margin:0 0 5px;"><small>&copy; Jeffrey R. Peters|Last Updated April 27, 2017</small></p>
