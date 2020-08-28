@@ -256,11 +256,11 @@ hr {
 }
 
 footer {
-  width:270px;
+  left:0;
   float:left;
   text-align:center;
-  position:fixed;
-  top:750px;
+  position:absolute;
+  bottom:0;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
